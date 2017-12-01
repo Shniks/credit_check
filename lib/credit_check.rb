@@ -8,7 +8,7 @@ def credit_card
     num *= 2 if count.odd? #Double every other digit. I tried to use Index(num) instead of count, but it didn't work
     num = 1 + (num - 10) if num >= 10 #Add the digits if they are over 10
     sum += num
-    count = count + 1
+    count += count
   end
 
   if sum % 10 == 0
