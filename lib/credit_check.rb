@@ -5,8 +5,8 @@ def credit_card
   count = 0
 
   card_reverse.each do |num|
-    num *= 2 if count.odd? #Double every other digit. I tried to use Index(num) instead of count, but it didn't work
-    num = 1 + (num - 10) if num >= 10 #Add the digits if they are over 10
+    num *= 2 if count.odd?
+    num = 1 + (num - 10) if num >= 10 
     sum += num
     count += count
   end
