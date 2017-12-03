@@ -34,9 +34,9 @@ end
 
 def result_validity(number)
     if validity_check(number) % 10 == 0
-    puts "The credit card number, #{number}, is valid! "
+      puts "The credit card number, #{number}, is valid! "
     else
-    puts "The credit card number, #{number}, is Invalid !"
+      puts "The credit card number, #{number}, is Invalid !"
     end
 end
 
