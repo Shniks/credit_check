@@ -1,10 +1,10 @@
-def credit_card_input(number)
-  number.to_i.digits
+def credit_card_input(card)
+  card.to_i.digits
 end
 
-def doubles_number(number)
+def doubles_number(doubles)
   count = 0
-  credit_card_input(number).map do |num|
+  credit_card_input(doubles).map do |num|
     count += 1
     if count.even?
       num *=2
@@ -14,19 +14,19 @@ def doubles_number(number)
   end
 end
 
-def more_than_10(number)
-  doubles_number(number).map do |num|
+def more_than_10(tenandabove)
+  doubles_number(tenandabove).map do |num|
     if num >= 10
-      num = 1 + (num - 10) if num >= 10
+      num = 1 + (num - 10)
     else
       num
     end
   end
 end
 
-def validity_check(number)
+def validity_check(validity)
   sum = 0
-  more_than_10(number).map do |num|
+  more_than_10(validity).map do |num|
     sum += num
   end
   sum
